@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, forwardRef} from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -13,7 +13,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 
 const pages = ['About me', 'Projects', 'Contact'];
 
-const ResponsiveAppBar = (props) => {
+const ResponsiveAppBar = forwardRef((props, ref) => {
   const [anchorElNav, setAnchorElNav] = useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -25,7 +25,7 @@ const ResponsiveAppBar = (props) => {
   };
 
   return (
-    <AppBar color='secondary' position="static">
+    <AppBar ref={ref} color='secondary'>
       <Container maxWidth="xl"> {/* xxl */}
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -117,5 +117,6 @@ const ResponsiveAppBar = (props) => {
       </Container>
     </AppBar>
   );
-};
+})
+
 export default ResponsiveAppBar;
