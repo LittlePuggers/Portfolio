@@ -10,10 +10,11 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import {Link} from 'react-router-dom'
 
 const pages = ['About me', 'Projects', 'Contact'];
 
-const ResponsiveAppBar = forwardRef((props, ref) => {
+const NavBar = forwardRef((props, ref) => {
   const [anchorElNav, setAnchorElNav] = useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -25,8 +26,8 @@ const ResponsiveAppBar = forwardRef((props, ref) => {
   };
 
   return (
-    <AppBar ref={ref} color='secondary'>
-      <Container maxWidth="xl"> {/* xxl */}
+    <AppBar position='static' ref={ref} color='primary'>
+      <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
@@ -37,14 +38,13 @@ const ResponsiveAppBar = forwardRef((props, ref) => {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'trebuchet ms',
-              fontWeight: 700,
+              fontWeight: 500,
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            ANA
+            ANA IBARRA
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -78,7 +78,8 @@ const ResponsiveAppBar = forwardRef((props, ref) => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography  textAlign="center">{page}</Typography>
+                  <Link to='/aboutme'>asd</Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -93,14 +94,13 @@ const ResponsiveAppBar = forwardRef((props, ref) => {
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'trebuchet ms',
-              fontWeight: 700,
+              fontWeight: 500,
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            ANA
+            ANA IBARRA
           </Typography>
           <Box sx={{ flexGrow: 1, justifyContent: 'flex-end', display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -119,4 +119,4 @@ const ResponsiveAppBar = forwardRef((props, ref) => {
   );
 })
 
-export default ResponsiveAppBar;
+export default NavBar;
