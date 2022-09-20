@@ -1,7 +1,6 @@
-import CssBaseline from '@mui/material/CssBaseline';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
-import Slide from '@mui/material/Slide';
-
+import CssBaseline from "@mui/material/CssBaseline";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
+import Slide from "@mui/material/Slide";
 
 function HideOnScroll(props) {
   const { children } = props;
@@ -15,13 +14,10 @@ function HideOnScroll(props) {
 }
 
 export default function HideAppBar(props) {
-
   return (
     <>
       <CssBaseline />
-      <HideOnScroll {...props}>
-        {props.children}
-      </HideOnScroll>
+      <HideOnScroll {...props}>{props.children}</HideOnScroll>
     </>
   );
 }
