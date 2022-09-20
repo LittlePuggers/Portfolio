@@ -26,15 +26,36 @@ export function Footer() {
       </div>
       <div
         style={{
-          width: "128px",
+          width: "136px",
           fontSize: "24px",
           display: "flex",
           justifyContent: "space-evenly",
         }}
       >
-        <IoLogoFacebook />
-        <IoLogoGithub />
-        <IoLogoLinkedin />
+        <a
+          className="social-icons"
+          href="https://www.facebook.com/anaibarram"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IoLogoFacebook />
+        </a>
+        <a
+          className="social-icons"
+          href="https://github.com/LittlePuggers"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IoLogoGithub />
+        </a>
+        <a
+          className="social-icons"
+          href="https://www.linkedin.com/in/ana-lucia-ibarra-millan-66b015251/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IoLogoLinkedin />
+        </a>
       </div>
     </div>
   );
