@@ -3,6 +3,7 @@ import "./index.css";
 import { Footer } from "./components/Footer";
 import HideAppBar from "./components/HideAppBar";
 import NavBar from "./components/NavBar";
+import Hero from "./components/Hero";
 import { createTheme } from "@mui/material/styles";
 import { ThemeProvider } from "@emotion/react";
 import { teal } from "@mui/material/colors";
@@ -24,15 +25,15 @@ function App() {
         <HideAppBar>
           <NavBar></NavBar>
         </HideAppBar>
-        <Router>
+        {/* <Router>
           <Routes>
             <Route
               path="/"
-              element={<div style={{ height: "150vh" }}>Home</div>}
+              element={<div style={{ height: "80vh" }}>Home</div>}
             ></Route>
           </Routes>
-        </Router>
-
+        </Router> */}
+        <Hero></Hero>
         <div className="footer">
           <Footer></Footer>
         </div>

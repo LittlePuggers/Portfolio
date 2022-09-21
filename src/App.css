@@ -35,3 +35,27 @@
 .social-icons:active {
   color: rgb(20, 18, 18);
 }
+
+#hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  margin: 0% 10% 0% 5%;
+}
+
+#hero-photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px;
+}
+
+#hero-photo {
+  border-radius: 10px;
+  min-width: inherit;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
