@@ -12,7 +12,7 @@ export default function Hero() {
             display: "flex",
             justifyContent: "center",
             margin: "15vh 5vh 5vh 5vh",
-            // height: "90vh",
+            height: "60vh",
           }}
         >
           <div id="hero-text">

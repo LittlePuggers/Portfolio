@@ -28,7 +28,7 @@ const NavBar = forwardRef((props, ref) => {
     <AppBar ref={ref} color="primary">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <IoPaw sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          {/* <IoPaw sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
