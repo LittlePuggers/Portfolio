@@ -6,13 +6,13 @@ import anaibarra from "../images/anaibarra.jpg";
 export default function Hero() {
   return (
     <React.Fragment>
-      <Container>
+      <Container id="hero">
         <Box
           sx={{
             display: "flex",
             justifyContent: "center",
             margin: "15vh 5vh 5vh 5vh",
-            height: "60vh",
+            height: "80vh",
           }}
         >
           <div id="hero-text">

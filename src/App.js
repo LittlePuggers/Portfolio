@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import { createTheme } from "@mui/material/styles";
 import { ThemeProvider } from "@emotion/react";
 import { teal } from "@mui/material/colors";
+import { useEffect } from "react";
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const myTheme = createTheme({
@@ -21,6 +22,10 @@ const myTheme = createTheme({
 });
 
 function App() {
+  useEffect(() => {
+    window.scrollTo({ behavior: "instant", top: 0 });
+  }, []);
+
   return (
     <ThemeProvider theme={myTheme}>
       <div className="App">

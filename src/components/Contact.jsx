@@ -4,9 +4,10 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
 
-export default function BasicTextFields() {
+export default function Contact(ref) {
   return (
     <Box
+      id="contact"
       component="form"
       sx={{
         display: "flex",
@@ -15,7 +16,7 @@ export default function BasicTextFields() {
         alignItems: "center",
         color: "primary",
         margin: "15vh 5vh 5vh 5vh",
-        height: "60vh",
+        height: "80vh",
         "& > :not(style)": { m: 1, width: "50%" },
       }}
       noValidate
