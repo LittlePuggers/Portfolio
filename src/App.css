@@ -65,6 +65,23 @@
   align-items: center;
 }
 
+#projects {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-img:hover .project-img-text {
+  visibility: visible;
+  height: fit-content;
+}
+
+.project-img-text {
+  visibility: hidden;
+}
+
 .contact-input {
   display: flex;
   justify-content: space-between;

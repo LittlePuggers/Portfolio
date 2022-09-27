@@ -5,6 +5,7 @@ import HideAppBar from "./components/HideAppBar";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import Aboutme from "./components/Aboutme";
+import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import { createTheme } from "@mui/material/styles";
 import { ThemeProvider } from "@emotion/react";
@@ -42,6 +43,7 @@ function App() {
         </Router> */}
         <Hero></Hero>
         <Aboutme></Aboutme>
+        <Projects></Projects>
         <Contact theme={myTheme}></Contact>
         <div className="footer">
           <Footer></Footer>
